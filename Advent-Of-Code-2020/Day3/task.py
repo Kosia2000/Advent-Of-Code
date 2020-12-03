@@ -3,8 +3,7 @@ filename = 'text.txt'
 file = open(filename, 'r')
 
 Lines = file.readlines()
-# for line in Lines:
-#    Lines = line.strip()
+
 file.close()
 
 Lines = [line.strip() for line in Lines]
