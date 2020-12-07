@@ -50,13 +50,17 @@ def max_number():
             number = answer
 
     seats_ID.sort()
+
+    stop_flag = True
+    seats_ID
     for seat in seats_ID:
         seat = int(seat)
-        if seats_ID[seat]+1 != seats_ID[seat+1]:
-            print("Missing seat: {}".format(seats_ID[seat]+1))
-            break
+        if stop_flag:
+            if seats_ID[seat]+1 != seats_ID[seat+1]:
+                print("Missing seat: {}".format(seats_ID[seat]+1))
+                stop_flag = False
 
-    print(number)
+    print("Max seat number: {}".format(number))
 
 
 max_number()
