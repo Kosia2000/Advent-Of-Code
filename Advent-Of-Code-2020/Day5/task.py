@@ -43,7 +43,7 @@ def max_number():
     lines = open_file()
     for line in lines:
         answer = (_get_row(line) * 8) + _get_col(line)
-        count+=1
+        count += 1
         seats_ID.append(answer)
 
         if answer > number:
