@@ -8,6 +8,7 @@ def count_fish(data):
     fish_list = data.copy()
     stop = 0
     while(stop<256):
+        print(stop)
         new_fish = []
         for fish in fish_list:
             if fish == 0:
